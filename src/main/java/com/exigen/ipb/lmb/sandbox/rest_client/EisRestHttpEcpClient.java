@@ -19,8 +19,8 @@ public class EisRestHttpEcpClient {
 		try {
 
 			String aIdpUrl = "http://localhost:8093/lmb-saml-idp-app/idp/profile/SAML2/SOAP/ECP";
-			String aUsername = "qa";
-			String aPassword = "qa";
+			String aUsername = "admin";
+			String aPassword = "admin";
 			HttpClient httpClient = new ShibHttpClient(aIdpUrl, aUsername, aPassword, true);
 			HttpPost postRequest = new HttpPost(
 				"http://localhost:8090/services/platform-rs/v1/lookups");
